@@ -1,8 +1,9 @@
 import React from "react";
+import "./css/index.css";
 
 export default function page() {
   return (
-    <div className="w-full h-screen bg-amber-50 flex flex-col justify-center items-center">
+    <div className="main_page w-full h-screen bg-amber-50 flex flex-col justify-center items-center">
       <h1 className="text-6xl font-p-n-montreal font-normal">
         PP Neue Montreal
       </h1>

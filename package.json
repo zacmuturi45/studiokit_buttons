@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "gulp": "tsx ./node_modules/.bin/gulp"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -18,12 +19,24 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.6",
+    "@types/gulp": "^4.0.18",
+    "@types/gulp-sass": "^6.0.0",
+    "@types/gulp-sourcemaps": "^0.0.38",
+    "@types/node": "^20.19.39",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "baseline-browser-mapping": "^2.10.27",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.0.1",
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "prettier": "^3.8.3",
+    "sass": "^1.99.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   }
 }
