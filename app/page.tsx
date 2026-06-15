@@ -38,7 +38,7 @@ export default function Page() {
           {/* Button */}
           <div className="mt-8 md:mt-12 w-full md:w-auto">
             <StudioKitButton
-              href="/archive"
+              href="/dummy_page"
               bg="black"
               color="white"
               title="shop now"
