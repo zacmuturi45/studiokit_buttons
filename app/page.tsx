@@ -7,10 +7,10 @@ export default function Page() {
   return (
     <div className="w-full min-h-screen bg-white flex flex-col md:flex-row overflow-hidden">
       {/* IMAGE SECTION (mobile-first visual anchor) */}
-      <div className="w-full md:w-1/2 order-1 md:order-2 border-b md:border-b-0 md:border-2 md:border-black">
-        <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-screen overflow-hidden">
+      <div className="w-full md:w-1/2 order-1 md:order-2">
+        <div className="relative w-full aspect-4/5 md:aspect-auto md:h-screen overflow-hidden">
           <Image
-            src={"/assets/bag_cap.jpeg"}
+            src={"/assets/reebok.webp"}
             alt="dunya_cap"
             fill
             priority
@@ -25,7 +25,7 @@ export default function Page() {
         <div className="flex flex-col max-w-xl w-full">
           {/* Title */}
           <h4 className="text-xl md:text-2xl font-bold font-p-n-montreal tracking-tight">
-            Dunya Drip Bag & Cap
+            Reebok Essentials
           </h4>
 
           {/* Description */}
