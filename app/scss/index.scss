@@ -1,0 +1,88 @@
+$bezier-transition: width 450ms cubic-bezier(0.625, 0.05, 0, 1);
+$transform-transition: transform 450ms cubic-bezier(0.625, 0.05, 0, 1);
+$svg-transform-transition: transform 400ms cubic-bezier(0.625, 0.05, 0, 1);
+
+.studiokit-link-wrapper {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.studiokit-button-container {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+
+  // Shaft Styles
+  .studiokit-button-shaft {
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "p-n-montreal", sans-serif;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem; // 14px (text-sm)
+    height: 2.5rem; // 40px (h-10)
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 0.75rem 1rem; // py-3 px-4
+    z-index: 1;
+    transition: $bezier-transition;
+
+    .studiokit-text-wrapper {
+      position: relative;
+      display: inline-flex;
+      overflow: hidden;
+      line-height: 1;
+
+      .studiokit-char {
+        display: inline-block;
+        text-shadow: 0 1.2em currentColor;
+
+        transition: transform 450ms ease;
+      }
+    }
+  }
+
+  // Arrow Box Styles
+  .studiokit-arrow-box {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem; // 40px
+    height: 2.5rem; // 40px
+    padding: 0;
+
+    transition:
+      background-color 300ms ease 0ms,
+      $transform-transition;
+
+    svg {
+      transition:
+        transform 400ms cubic-bezier(0.625, 0.05, 0, 1),
+        color 150ms ease 0ms;
+    }
+  }
+
+  &.is-hovered:not(.is-mobile) {
+    .studiokit-char {
+      transform: translateY(-1.2em);
+    }
+
+    .studiokit-arrow-box {
+      transition:
+        background-color 300ms ease 100ms,
+        $transform-transition;
+
+      svg {
+        transition:
+          $svg-transform-transition,
+          color 150ms ease 100ms;
+      }
+    }
+  }
+}

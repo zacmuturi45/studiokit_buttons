@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/index.css";
 import StudioKitButton from "./components/Buttons/studiokit-button-001";
+import StudioKitButtonJsx from "./components/Buttons/studiokit-button-001";
 import Image from "next/image";
 
 export default function Page() {
@@ -41,7 +42,7 @@ export default function Page() {
               href="/dummy_page"
               bg="black"
               color="white"
-              title="shop now"
+              title="shop reebok"
             />
           </div>
         </div>
