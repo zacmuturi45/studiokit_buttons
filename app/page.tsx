@@ -1,21 +1,51 @@
 import React from "react";
 import "./css/index.css";
+import StudioKitButton from "./components/Buttons/studiokit-button-001";
+import Image from "next/image";
 
-export default function page() {
+export default function Page() {
   return (
-    <div className="main_page w-full h-screen bg-amber-50 flex flex-col justify-center items-center">
-      <h1 className="text-6xl font-p-n-montreal font-normal">
-        PP Neue Montreal
-      </h1>
-      <p className="text-2xl text-black font-p-n-montreal font-normal italic">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic architecto,
-        voluptatibus odio quas autem commodi perferendis. Nulla distinctio
-        tempora quo quaerat aliquid amet. Itaque quam natus mollitia accusamus.
-        Aut, illo.
-      </p>
-      <button className="bg-amber-700 text-white py-4 px-8 rounded-nav">
-        Click me
-      </button>
+    <div className="w-full min-h-screen bg-white flex flex-col md:flex-row overflow-hidden">
+      {/* IMAGE SECTION (mobile-first visual anchor) */}
+      <div className="w-full md:w-1/2 order-1 md:order-2 border-b md:border-b-0 md:border-2 md:border-black">
+        <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-screen overflow-hidden">
+          <Image
+            src={"/assets/bag_cap.jpeg"}
+            alt="dunya_cap"
+            fill
+            priority
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+      </div>
+
+      {/* TEXT SECTION */}
+      <div className="w-full md:w-1/2 order-2 md:order-1 flex items-center justify-center px-6 md:px-16 py-12 md:py-0">
+        <div className="flex flex-col max-w-xl w-full">
+          {/* Title */}
+          <h4 className="text-xl md:text-2xl font-bold font-p-n-montreal tracking-tight">
+            Dunya Drip Bag & Cap
+          </h4>
+
+          {/* Description */}
+          <p className="text-sm md:text-base font-p-n-montreal tracking-wide text-black/70 mt-4 leading-relaxed">
+            With roots dating back 130 years, Reebok is one of the most iconic
+            and recognisable brands in fitness — and the world. Reebok is
+            founded on athletic footwear that changed the direction of sport.
+          </p>
+
+          {/* Button */}
+          <div className="mt-8 md:mt-12 w-full md:w-auto">
+            <StudioKitButton
+              href="/archive"
+              bg="black"
+              color="white"
+              title="shop now"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

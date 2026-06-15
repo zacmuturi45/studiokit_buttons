@@ -15,38 +15,6 @@ Mixing them up won't break things immediately but fonts especially need inline o
 }
 
 @theme {
-  /* Spacing */
-  --spacing-nav-height: 64px;
-  --spacing-nav-offset: 24px;
-  --spacing-nav-pill-x: 24px;
-  --spacing-nav-pill-y: 12px;
-  --spacing-nav-gap: 40px;
-  --spacing-dropdown-gap: 8px;
-
-  /* Width */
-  --max-width-nav: 1300px;
-  --width-60vw: 60vw;
-
-  /* Border radius */
-  --radius-pill: 9999px;
-  --radius-nav: 16px;
-  --radius-dropdown: 16px;
-
-  /* Font sizes */
-  --font-size-nav-label: 16px;
-  --leading-nav-label: 1.5;
-  --font-size-nav-dropdown-link: 16px;
-  --leading-nav-dropdown-link: 1.4;
-  --font-size-nav-caption: 12px;
-  --leading-nav-caption: 1.3;
-
-  /* Colors */
-  --color-nav-surface: #f5f3ee;
-  --color-nav-text: #1c2b2b;
-  --color-nav-muted: #6b7a7a;
-  --color-nav-cta: #4a9e8e;
-  --color-page-bg: #2c3e45;
-
   /* Easing */
   --ease-nav: cubic-bezier(0.16, 1, 0.3, 1);
 }
